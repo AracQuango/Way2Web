@@ -22,7 +22,7 @@ class FizzBuzz
      */
     public function __invoke()
     {
-        $result = array_map(function($number) {
+        $result = array_map(function ($number) {
             $fizzBuzz = $this->calculateNumber($number);
             return "{$number}{$fizzBuzz}";
         }, range(1, 100));
@@ -36,7 +36,8 @@ class FizzBuzz
      * @param int $number
      * @return string
      */
-    private function calculateNumber($number){
+    private function calculateNumber($number)
+    {
         switch ($number % 15) {
             case 3:
             case 6:
