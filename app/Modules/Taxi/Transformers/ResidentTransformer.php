@@ -13,8 +13,7 @@ class ResidentTransformer extends TransformerAbstract
         return [
             'id'             => (int)$model->id,
             'name'           => $model->full_name,
-            'zip_code'       => $model->zip_code,
-            'street_number'  => $model->street_number,
+            'address'        => $model->address,
             'current_budget' => $model->budget->balance,
         ];
     }
