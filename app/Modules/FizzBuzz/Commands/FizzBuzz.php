@@ -10,9 +10,9 @@ class FizzBuzz
      * An array consisting of the values corresponding to Fizz, Buzz and FizzBuzz.
      */
     const VALUES = [
-        3  => "Fizz",
-        5  => "Buzz",
-        15 => "FizzBuzz",
+        3  => 'Fizz',
+        5  => 'Buzz',
+        15 => 'FizzBuzz',
     ];
 
     /**
@@ -42,20 +42,20 @@ class FizzBuzz
             case 3:
             case 6:
             case 9:
-                return " Fizz";
+                return ' Fizz';
                 break;
 
             case 5:
             case 10:
-                return " Buzz";
+                return ' Buzz';
                 break;
 
             case 0:
-                return " FizzBuzz";
+                return ' FizzBuzz';
                 break;
 
             default:
-                return "";
+                return '';
                 break;
         }
     }

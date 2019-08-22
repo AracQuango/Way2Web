@@ -17,7 +17,6 @@ class CreateTransactionsTable extends Migration
             $table->bigIncrements('id');
             $table->enum('type', ['add', 'subtract']);
             $table->double('amount')->default(0);
-            $table->ipAddress('from_ip');
             $table->bigInteger('budget_id')->unsigned();
             $table->foreign('budget_id')->references('id')->on('budgets');
             $table->timestamps();

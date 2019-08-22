@@ -9,7 +9,6 @@ class Transaction extends Model
     protected $fillable = [
         'type',
         'amount',
-        'from_ip',
         'description'
     ];
 

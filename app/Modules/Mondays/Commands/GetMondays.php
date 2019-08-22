@@ -10,11 +10,11 @@ class GetMondays
 
     public function __invoke($startDate, $endDate)
     {
-        $startDateInstance = Carbon::createFromFormat("d-m-Y", $startDate);
-        $endDateInstance = Carbon::createFromFormat("d-m-Y", $endDate);
+        $startDateInstance = Carbon::createFromFormat('d-m-Y', $startDate);
+        $endDateInstance = Carbon::createFromFormat('d-m-Y', $endDate);
 
         $result = array_map(function ($week) use ($startDateInstance) {
-            $monday = $startDateInstance->addWeek()->startOfWeek(Carbon::MONDAY)->format("d-m-Y");
+            $monday = $startDateInstance->addWeek()->startOfWeek(Carbon::MONDAY)->format('d-m-Y');
             return "The monday for week {$week} is {$monday}";
         }, range(1, $startDateInstance->diffInWeeks($endDateInstance)));
 

@@ -21,7 +21,7 @@ class Budget extends Model
         $transactions = $this->transactions;
         $amount = 0;
         foreach ($transactions as $transaction) {
-            $transaction->type == "add" ? $amount += $transaction->amount : $amount -= $transaction->amount;
+            $transaction->type == 'add' ? $amount += $transaction->amount : $amount -= $transaction->amount;
         }
         return $amount;
     }

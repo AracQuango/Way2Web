@@ -14,7 +14,7 @@ class AddDescriptionToTransactions extends Migration
     public function up()
     {
         Schema::table('transactions', function (Blueprint $table) {
-            $table->text("description");
+            $table->text('description');
         });
     }
 
