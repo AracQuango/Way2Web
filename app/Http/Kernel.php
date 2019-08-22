@@ -19,7 +19,6 @@ class Kernel extends HttpKernel
         \Way2Web\Http\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
         \Way2Web\Http\Middleware\TrustProxies::class,
-        \Barryvdh\Cors\HandleCors::class,
     ];
 
     /**
